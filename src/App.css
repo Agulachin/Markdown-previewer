@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 185, 191, 0.577) #f4f4f4;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  /* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+*::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 185, 191, 0.577);
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+}
+
+body{
+    margin: 2%;
+    background-color: blanchedalmond;
+}
+table {
+    border-collapse: collapse;
+    background-color: bisque;
+}
+
+td,
+  th {
+    border: 1px solid black;
+    padding-left: 15px;
+    padding-right: 15px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  textarea {
+      width: 40vw;
+      height: 80vh;
   }
-  to {
-    transform: rotate(360deg);
+
+  #preview {
+    background-color: rgba(255, 255, 255, 0.446);
+    border-radius: 2%;
+    padding-left: 2%;
+    width: 50vw;
+    height: 80vh;
+    overflow-y: scroll;
   }
+
+  textarea:focus, input:focus{
+    outline: none;
 }
+
+  #editor {
+    border-radius: 2%;
+    width: 40vw;
+    height: 80vh;
+    box-shadow: 3px 4px 3px 1px rgba(0,0,0,0.33);
+    overflow-y: scroll;
+  }
+
+  code {
+    background: rgb(233, 217, 221);;
+    font-size: 0.875rem;
+    font-weight: bold;
+  }
